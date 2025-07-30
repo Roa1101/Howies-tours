@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Howie's Tours & Beach</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #004080;
+      color: white;
+      padding: 1rem;
+    }
+    .logo {
+      height: 60px;
+    }
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #004080;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      border-top: 1px solid white;
+    }
+    .menu-toggle {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .show {
+      display: flex;
+    }
+    .content {
+      padding: 1rem;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('menu');
+      nav.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Howie's Tours Logo" class="logo"/>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+  <nav id="menu">
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#vision">Mission & Vision</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#packages">Tour Packages & Prices</a>
+  </nav>
+  <div class="content" id="home">
+    <h2>Welcome to Howie's Tours & Beach</h2>
+    <p id="vision"><strong>Our Mission:</strong> To provide unforgettable and safe experiences in Roatan through immersive and friendly tours.</p>
+    <p><strong>Our Vision:</strong> To be the leading tour provider known for authentic, personal, and exceptional service in Roatan.</p>
+
+    <h3>Available Tours</h3>
+    <ul>
+      <li>Island + Park + Beach Break</li>
+      <li>Island + Park + Beach Club</li>
+      <li>Zip Line + Park + Beach Club</li>
+      <li>Island + Park + Zip Line</li>
+      <li>Island Tour + Horseback</li>
+      <li>Zip Line + Horseback + Beach Break</li>
+      <li>Island Tour + ATV + Park</li>
+      <li>ATV + Park + Beach Club</li>
+      <li>Island + Glassbottom Boat + Park</li>
+      <li>Zip Line + Glassbottom + Beach Club</li>
+      <li>Zipline + ATV + Horseback</li>
+      <li>Island Tour + Beach Club</li>
+      <li>East End Adventure + Mangrove Tunnel</li>
+      <li>West to East Full Island Tour</li>
+      <li>Island + Park + Snorkeling</li>
+      <li>2 Site Snorkeling</li>
+      <li>3 Site Snorkel and Cruise</li>
+      <li>Dolphin Encounter</li>
+    </ul>
+
+    <a class="whatsapp-button" href="https://wa.me/50488962738" target="_blank">📱 Book Your Tour Now on WhatsApp</a>
+  </div>
+</body>
+</html>
